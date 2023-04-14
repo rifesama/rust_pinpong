@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title> Rust WASM Pong </title>
+    </head>
+    <body>
+        <script type="module">
+            import init from "./pkg/rust_pinpong.js"; // nombre de nuestro proyecto
+            init("./pkg/rust_pinpong_bg.wasm").then(funtion (wasm) {
+                wasm,run();
+            });
+           
+         </script>
+    </body>
+</html>
